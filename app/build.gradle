@@ -26,4 +26,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation group: 'org.androidannotations', name: 'androidannotations-api', version: '4.6.0'
+    implementation group: 'com.helger', name: 'jcodemodel', version: '3.3.0'
+    implementation 'org.xutils:xutils:3.8.3'
+    annotationProcessor group: 'org.androidannotations',name: 'androidannotations',version: '4.6.0'
 }
