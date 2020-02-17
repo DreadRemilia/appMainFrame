@@ -20,14 +20,20 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'com.google.android.material:material:1.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    implementation group: 'org.androidannotations', name: 'androidannotations-api', version: '4.6.0'
-    implementation group: 'com.helger', name: 'jcodemodel', version: '3.3.0'
+    implementation 'org.androidannotations:androidannotations-api:4.6.0'
+    implementation 'com.helger:jcodemodel:3.3.0'
     implementation 'org.xutils:xutils:3.8.3'
-    annotationProcessor group: 'org.androidannotations',name: 'androidannotations',version: '4.6.0'
+    annotationProcessor group: 'org.androidannotations', name: 'androidannotations', version: '4.6.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.2.2'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation files('libs/HeWeather_Public_Android_V3.3.jar')
 }

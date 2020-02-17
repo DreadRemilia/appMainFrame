@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.RegistFragment">
+
+    <Button
+        android:id="@+id/registBackButton"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="620dp"
+        android:background="#FFBBFF"
+        android:text="返回"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/registLoginButton"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="620dp"
+        android:background="#FFBBFF"
+        android:text="注册"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="113dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="520dp"
+        android:text="用户类型"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/registCpwEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="360dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="113dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="360dp"
+        android:text="确认密码"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="113dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="440dp"
+        android:text="性别"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/registUserEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="288dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-250dp"
+        android:text="用户注册"
+        android:textAlignment="center"
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="113dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:text="用户名"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/registPwEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="280dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="113dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="280dp"
+        android:text="密码"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/registUserInfo"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="250dp"
+        android:textAlignment="center"
+        android:textColor="#FA0000" />
+
+    <TextView
+        android:id="@+id/registPwInfo"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="330dp"
+        android:textAlignment="center"
+        android:textColor="#FA0000" />
+
+    <TextView
+        android:id="@+id/registCpwInfo"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="410dp"
+        android:textAlignment="center"
+        android:textColor="#FA0000" />
+
+    <TextView
+        android:id="@+id/registSexInfo"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="490dp"
+        android:textAlignment="center"
+        android:textColor="#FA0000" />
+
+    <TextView
+        android:id="@+id/registTypeInfo"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="570dp"
+        android:textAlignment="center"
+        android:textColor="#FA0000" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/registSexMaleButton"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="443dp"
+            android:text="男"
+            android:textAlignment="center"
+            android:textSize="23sp" />
+
+        <RadioButton
+            android:id="@+id/registSexFemaleButton"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="-32dp"
+            android:text="女"
+            android:textSize="23sp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/registTypeComButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="523dp"
+            android:text="一般用户"
+            android:textAlignment="center"
+            android:textSize="23sp" />
+
+        <RadioButton
+            android:id="@+id/registTypeSerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="-32dp"
+            android:text="服务人员"
+            android:textSize="23sp" />
+    </RadioGroup>
+
+</FrameLayout>
