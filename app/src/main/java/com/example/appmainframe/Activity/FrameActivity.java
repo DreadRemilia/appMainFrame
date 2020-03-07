@@ -1,7 +1,6 @@
 package com.example.appmainframe.Activity;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
@@ -12,18 +11,14 @@ import android.widget.RadioGroup;
 
 import com.example.appmainframe.Fragment.ChatFragment_;
 import com.example.appmainframe.Fragment.OptionFragment_;
-import com.example.appmainframe.Fragment.ServiceFragment;
 import com.example.appmainframe.Fragment.ServiceFragment_;
 import com.example.appmainframe.R;
-import com.example.appmainframe.Utils.MyFragmentPagerAdapter;
+import com.example.appmainframe.Adapter.MyFragmentPagerAdapter;
+import com.example.appmainframe.Utils.AppUtils;
+import com.example.appmainframe.Utils.Density;
 
 import org.androidannotations.annotations.AfterViews;
-import org.androidannotations.annotations.Bean;
-import org.androidannotations.annotations.CheckedChange;
 import org.androidannotations.annotations.EActivity;
-import org.androidannotations.annotations.PageScrollStateChanged;
-import org.androidannotations.annotations.PageScrolled;
-import org.androidannotations.annotations.PageSelected;
 import org.androidannotations.annotations.ViewById;
 
 import java.util.ArrayList;
@@ -49,8 +44,8 @@ public class FrameActivity extends BaseActivity {
         //初始化Fragment
         fFragment = new ArrayList<>(3);
         fFragment.add(new ServiceFragment_());
-        fFragment.add(new OptionFragment_());
         fFragment.add(new ChatFragment_());
+        fFragment.add(new OptionFragment_());
         //初始化ViewPager
         fAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager(),fFragment);
         framePager.setAdapter(fAdapter);

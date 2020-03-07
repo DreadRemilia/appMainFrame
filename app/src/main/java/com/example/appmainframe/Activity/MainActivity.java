@@ -15,13 +15,16 @@ import android.widget.VideoView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.example.appmainframe.Fragment.LoginFragment;
 import com.example.appmainframe.Fragment.LoginFragment_;
 import com.example.appmainframe.Fragment.RegistFragment;
 import com.example.appmainframe.Fragment.RegistFragment_;
 import com.example.appmainframe.R;
+import com.example.appmainframe.Utils.AppUtils;
 import com.example.appmainframe.Utils.CustomVideoView;
+import com.example.appmainframe.Utils.Density;
 
 import org.androidannotations.annotations.AfterInject;
 import org.androidannotations.annotations.AfterViews;
