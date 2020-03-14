@@ -7,4 +7,49 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <!--LoginFragment-->
+    <string name="login_title">家政管理系统</string>
+    <string name="login_city">上海</string>
+    <string name="login_user">用户名：</string>
+    <string name="login_pwd">密码：</string>
+    <string name="login_sex">性别：</string>
+    <string name="login_type">用户类型：</string>
+    <string name="login_regist">注册</string>
+    <string name="login_login">登录</string>
+    <!--RegistFragment-->
+    <string name="regist_title">用户注册</string>
+    <string name="regist_user">用户名</string>
+    <string name="regist_pwd">密码</string>
+    <string name="regist_cpwd">确认密码</string>
+    <string name="regist_type">用户类型</string>
+    <string name="regist_sex">性别</string>
+    <string name="regist_regist">注册</string>
+    <string name="regist_back">返回</string>
+    <string name="regist_sex_male">男</string>
+    <string name="regist_sex_female">女</string>
+    <string name="regist_type_common">一般用户</string>
+    <string name="regist_type_service">服务人员</string>
+    <!--OptionFragment-->
+    <string name="option_halo">您好：</string>
+    <string name="option_sex">性别：</string>
+    <string name="option_type">用户类别：</string>
+    <string name="option_total">服务总数：</string>
+    <string name="option_curser">当前服务</string>
+    <string name="option_hisser">历史服务</string>
+    <string name="option_changesett">更改设置</string>
+    <string name="option_exit">退出系统</string>
+    <!--OptionChangeFragment-->
+    <string name="change_user">用户：</string>
+    <string name="change_curpwd">当前密码：</string>
+    <string name="change_cursex">性别：</string>
+    <string name="change_curtype">类别：</string>
+    <string name="change_title">新设置：</string>
+    <string name="change_newpwd">新密码：</string>
+    <string name="change_newcpwd">确认密码：</string>
+    <string name="change_newsex">新性别：</string>
+    <string name="change_newtype">新类型：</string>
+    <!--ProviderFragment-->
+    <string name="provider_title">服务发布</string>
+    <string name="provider_servicename">服务名称：</string>
+    <string name="provider_city">修改城市：</string>
 </resources>

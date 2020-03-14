@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -39,8 +40,9 @@ import org.androidannotations.annotations.ViewById;
 public class MainActivity extends BaseActivity {
     @ViewById(R.id.loginVideo)
     CustomVideoView loginVideo;
+
     @AfterViews
-    protected void initView(){
+    protected void initView() {
         //设置加载路径
         loginVideo.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.loginvideo));
         //播放
@@ -60,10 +62,11 @@ public class MainActivity extends BaseActivity {
         //将LoginFragment入栈
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.loginFragment,new LoginFragment_())
+                .replace(R.id.loginFragment, new LoginFragment_())
                 .addToBackStack(null)
                 .commit();
     }
+
     @Override
     protected void onRestart() {
         initView();
@@ -76,4 +79,8 @@ public class MainActivity extends BaseActivity {
         super.onStop();
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }

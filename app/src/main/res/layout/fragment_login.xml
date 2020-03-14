@@ -8,7 +8,7 @@
     tools:context=".Fragment.LoginFragment_">
 
     <EditText
-        android:id="@+id/loginUserEdit"
+        android:id="@+id/ev_loginUser"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintWidth_percent="0.5"
@@ -25,15 +25,15 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/loginLoginButton"
+        android:id="@+id/btn_loginLogin"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.06"
         app:layout_constraintWidth_percent="0.3"
         android:background="#FFBBFF"
-        android:text="登录"
+        android:text="@string/login_login"
         android:textSize="22sp"
-        app:layout_constraintTop_toBottomOf="@+id/loginPwEdit"
+        app:layout_constraintTop_toBottomOf="@+id/ev_loginPwd"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,7 +48,7 @@
         app:layout_constraintHeight_percent="0.13"
         app:layout_constraintWidth_percent="0.7"
         android:gravity="center_vertical"
-        android:text="管理系统"
+        android:text="@string/login_title"
         android:textAlignment="center"
         android:textSize="40sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -58,15 +58,15 @@
         app:layout_constraintVertical_bias="0.1"/>
 
     <Button
-        android:id="@+id/loginRegistButton"
+        android:id="@+id/btn_loginRegist"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.06"
         app:layout_constraintWidth_percent="0.3"
         android:background="#FFBBFF"
-        android:text="注册"
+        android:text="@string/login_regist"
         android:textSize="22sp"
-        app:layout_constraintTop_toBottomOf="@+id/loginPwEdit"
+        app:layout_constraintTop_toBottomOf="@+id/ev_loginPwd"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -79,7 +79,7 @@
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.055"
         app:layout_constraintWidth_percent="0.3"
-        android:text="密码："
+        android:text="@string/login_pwd"
         android:textAlignment="center"
         android:gravity="center_vertical"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -91,7 +91,7 @@
         android:textSize="25sp" />
 
     <TextView
-        android:id="@+id/loginLoginInfo"
+        android:id="@+id/tv_loginInfo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintWidth_percent="0.8"
@@ -105,7 +105,7 @@
         app:layout_constraintRight_toRightOf="parent"/>
 
     <EditText
-        android:id="@+id/loginPwEdit"
+        android:id="@+id/ev_loginPwd"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintWidth_percent="0.5"
@@ -114,7 +114,7 @@
         android:ems="10"
         android:textSize="22sp"
         android:gravity="center_vertical"
-        app:layout_constraintTop_toBottomOf="@+id/loginUserEdit"
+        app:layout_constraintTop_toBottomOf="@+id/ev_loginUser"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@id/textView3"
         app:layout_constraintRight_toRightOf="parent"
@@ -134,7 +134,7 @@
         app:layout_constraintHeight_percent="0.08"
         app:layout_constraintVertical_bias="0.06"
         app:layout_constraintHorizontal_bias="0.5"
-        android:text="上海"
+        android:text="@string/login_city"
         android:textAlignment="center"
         android:gravity="center_vertical"
         android:textSize="36sp" />
@@ -145,7 +145,7 @@
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.055"
         app:layout_constraintWidth_percent="0.3"
-        android:text="用户名："
+        android:text="@string/login_user"
         android:textAlignment="center"
         android:gravity="center_vertical"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
@@ -157,7 +157,7 @@
         android:textSize="25sp" />
 
     <TextView
-        android:id="@+id/temperatureText"
+        android:id="@+id/tv_temp"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:textAlignment="center"
@@ -165,10 +165,10 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintWidth_percent="0.35"
         app:layout_constraintHeight_percent="0.055"
-        app:layout_constraintTop_toBottomOf="@+id/weatherText" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_weather" />
 
     <TextView
-        android:id="@+id/weatherText"
+        android:id="@+id/tv_weather"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:textAlignment="center"

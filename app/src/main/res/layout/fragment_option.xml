@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0">
 
         <Button
-            android:id="@+id/optionToCOpt"
+            android:id="@+id/btn_optionChangeSetting"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -28,7 +28,7 @@
             app:layout_constraintVertical_bias="0.88"
             android:background="#E4DBDB"
             android:paddingLeft="20dp"
-            android:text="更改设置"
+            android:text="@string/option_changesett"
             android:textAlignment="viewStart"
             android:textSize="25sp"
             app:layout_constraintTop_toTopOf="parent"
@@ -49,15 +49,15 @@
             app:layout_constraintRight_toRightOf="parent" />
 
         <Button
-            android:id="@+id/optionLogout"
+            android:id="@+id/btn_optionExit"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintWidth_percent="0.5"
             app:layout_constraintHeight_percent="0.08"
             android:background="#FA4848"
-            android:text="退出系统"
-            android:textSize="30dp"
+            android:text="@string/option_exit"
+            android:textSize="30sp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -65,23 +65,24 @@
             app:layout_constraintVertical_bias="0.99"/>
 
         <TextView
-            android:id="@+id/optionShowSex"
-            android:layout_width="115dp"
+            android:id="@+id/tv_optionSex"
+            android:layout_width="0dp"
             android:layout_height="35dp"
-            android:textAlignment="center"
             android:gravity="center_vertical"
             android:textSize="20sp"
-            app:layout_constraintVertical_bias="0.14"
-            app:layout_constraintStart_toEndOf="@id/textView15"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintRight_toRightOf="parent" />
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.14"
+            app:layout_constraintWidth_percent="0.25" />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="97dp"
             android:layout_height="36dp"
-            android:text="您好:"
+            android:text="@string/option_halo"
             android:textAlignment="center"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -93,12 +94,13 @@
 
         <TextView
             android:id="@+id/textView19"
-            android:layout_width="100dp"
+            android:layout_width="0dp"
             android:layout_height="35dp"
-            android:text="用户类别："
+            app:layout_constraintWidth_percent="0.32"
+            android:text="@string/option_type"
             android:textAlignment="center"
             android:gravity="center_vertical"
-            app:layout_constraintLeft_toRightOf="@id/imageView"
+            app:layout_constraintLeft_toRightOf="@id/iv_user"
             app:layout_constraintTop_toTopOf="@id/textView15"
             app:layout_constraintBottom_toBottomOf="@id/textView21"
             app:layout_constraintRight_toRightOf="parent"
@@ -107,26 +109,28 @@
 
         <TextView
             android:id="@+id/textView15"
-            android:layout_width="65dp"
+            android:layout_width="0dp"
             android:layout_height="35dp"
-            android:text="性别："
+            app:layout_constraintWidth_percent="0.32"
+            android:text="@string/option_sex"
             android:textAlignment="center"
             android:textSize="20sp"
-            app:layout_constraintLeft_toRightOf="@id/imageView"
+            app:layout_constraintLeft_toRightOf="@id/iv_user"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintVertical_bias="0.14"
-            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintHorizontal_bias="0.0"
             android:gravity="center_vertical"/>
 
         <TextView
-            android:id="@+id/optionShowCount"
-            android:layout_width="110dp"
+            android:id="@+id/tv_optionTotal"
+            android:layout_width="0dp"
             android:layout_height="35dp"
-            android:textAlignment="center"
+            app:layout_constraintWidth_percent="0.25"
             android:gravity="center_vertical"
-            app:layout_constraintStart_toEndOf="@id/textView21"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -134,7 +138,7 @@
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/optionToNSer"
+            android:id="@+id/btn_optionCurSer"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -143,7 +147,7 @@
             app:layout_constraintVertical_bias="0.58"
             android:background="#E4DBDB"
             android:paddingLeft="20dp"
-            android:text="当前服务"
+            android:text="@string/option_curser"
             android:textAlignment="viewStart"
             android:textSize="25sp"
             app:layout_constraintTop_toTopOf="parent"
@@ -152,32 +156,33 @@
             app:layout_constraintRight_toRightOf="parent" />
 
         <TextView
-            android:id="@+id/optionShowUser"
+            android:id="@+id/tv_optionUser"
             android:layout_width="227dp"
             android:layout_height="36dp"
             android:textAlignment="gravity"
-            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="25sp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.801"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintVertical_bias="0.05"
-            app:layout_constraintHorizontal_bias="0.8"
-            android:textSize="25sp" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.049" />
 
         <TextView
-            android:id="@+id/optionShowType"
-            android:layout_width="110dp"
+            android:id="@+id/tv_optionType"
+            android:layout_width="0dp"
             android:layout_height="35dp"
-            android:textAlignment="center"
+            app:layout_constraintWidth_percent="0.25"
             android:gravity="center_vertical"
-            app:layout_constraintStart_toEndOf="@id/textView19"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@id/optionShowSex"
-            app:layout_constraintBottom_toBottomOf="@id/optionShowCount"
+            app:layout_constraintTop_toTopOf="@id/tv_optionSex"
+            app:layout_constraintBottom_toBottomOf="@id/tv_optionTotal"
             android:textSize="20sp" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/iv_user"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:src="@drawable/imageRef"
@@ -189,7 +194,7 @@
             app:layout_constraintVertical_bias="0.2"/>
 
         <Button
-            android:id="@+id/optionToHSer"
+            android:id="@+id/btn_optionHisSer"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -198,7 +203,7 @@
             app:layout_constraintVertical_bias="0.73"
             android:background="#E4DBDB"
             android:paddingLeft="20dp"
-            android:text="历史服务"
+            android:text="@string/option_hisser"
             android:textAlignment="viewStart"
             android:textSize="25sp"
             app:layout_constraintTop_toTopOf="parent"
@@ -208,12 +213,13 @@
 
         <TextView
             android:id="@+id/textView21"
-            android:layout_width="100dp"
+            android:layout_width="0dp"
             android:layout_height="35dp"
-            android:text="服务总数："
+            app:layout_constraintWidth_percent="0.32"
+            android:text="@string/option_total"
             android:textAlignment="center"
             android:gravity="center_vertical"
-            app:layout_constraintLeft_toRightOf="@id/imageView"
+            app:layout_constraintLeft_toRightOf="@id/iv_user"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"

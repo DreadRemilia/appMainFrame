@@ -4,7 +4,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 
 public class NetUtils {
-
+    //用于处理net比特串
     public static byte[] readBytes(InputStream is){
         try {
             byte[] buffer = new byte[1024];

@@ -19,11 +19,11 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return this.fList == null? null : this.fList.get(position);
+        return fList.get(position);
     }
 
     @Override
     public int getCount() {
-        return this.fList == null? null : this.fList.size();
+        return fList.size();
     }
 }

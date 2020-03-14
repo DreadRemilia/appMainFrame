@@ -5,7 +5,16 @@ public class User {
     private String userPassword;
     private String userSex;
     private String userType;
+    private String userCount;
     private String msg;
+
+    public void setUserCount(String userCount) {
+        this.userCount = userCount;
+    }
+
+    public String getUserCount() {
+        return userCount;
+    }
 
     public void setMsg(String msg) {
         this.msg = msg;

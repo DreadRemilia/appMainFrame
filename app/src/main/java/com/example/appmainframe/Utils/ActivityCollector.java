@@ -1,4 +1,4 @@
-package com.example.appmainframe.Activity;
+package com.example.appmainframe.Utils;
 
 import android.app.Activity;
 

@@ -8,7 +8,7 @@
     tools:context=".Fragment.ServiceFragment_">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/serviceRecycle"
+        android:id="@+id/rcy_service"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintWidth_percent="1"

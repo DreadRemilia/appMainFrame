@@ -8,15 +8,15 @@
     android:id="@+id/frameLayout">
 
     <Button
-        android:id="@+id/registBackButton"
+        android:id="@+id/btn_registBack"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintWidth_percent="0.25"
         app:layout_constraintHeight_percent="0.06"
         android:background="#FFBBFF"
-        android:text="返回"
+        android:text="@string/regist_back"
         android:textSize="22sp"
-        app:layout_constraintTop_toBottomOf="@id/registTypeInfo"
+        app:layout_constraintTop_toBottomOf="@id/tv_registTInfo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -24,15 +24,15 @@
         app:layout_constraintHorizontal_bias="0.8"/>
 
     <Button
-        android:id="@+id/registLoginButton"
+        android:id="@+id/btn_registRegist"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintWidth_percent="0.25"
         app:layout_constraintHeight_percent="0.06"
         android:background="#FFBBFF"
-        android:text="注册"
+        android:text="@string/regist_regist"
         android:textSize="22sp"
-        app:layout_constraintTop_toBottomOf="@id/registTypeInfo"
+        app:layout_constraintTop_toBottomOf="@id/tv_registTInfo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -45,7 +45,7 @@
         android:layout_height="0dp"
         app:layout_constraintWidth_percent="0.28"
         app:layout_constraintHeight_percent="0.05"
-        android:text="用户类型"
+        android:text="@string/regist_type"
         android:textAlignment="center"
         android:textSize="25sp"
         app:layout_constraintTop_toTopOf="parent"
@@ -56,7 +56,7 @@
         app:layout_constraintHorizontal_bias="0.05"/>
 
     <EditText
-        android:id="@+id/registCpwEdit"
+        android:id="@+id/ev_registCPwd"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.06"
@@ -81,7 +81,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="确认密码"
+        android:text="@string/regist_cpwd"
         android:textAlignment="center"
         android:textSize="25sp"
         app:layout_constraintVertical_bias="0.50"
@@ -97,14 +97,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="性别"
+        android:text="@string/regist_sex"
         android:textAlignment="center"
         android:textSize="25sp"
         app:layout_constraintVertical_bias="0.6"
         app:layout_constraintHorizontal_bias="0.1"/>
 
     <EditText
-        android:id="@+id/registUserEdit"
+        android:id="@+id/ev_registUser"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.06"
@@ -125,7 +125,7 @@
         app:layout_constraintHeight_percent="0.12"
         app:layout_constraintWidth_percent="0.65"
         android:gravity="center_vertical"
-        android:text="用户注册"
+        android:text="@string/regist_title"
         android:textAlignment="center"
         android:textSize="45sp"
         app:layout_constraintTop_toTopOf="parent"
@@ -147,12 +147,12 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintVertical_bias="0.30"
         app:layout_constraintHorizontal_bias="0.1"
-        android:text="用户名"
+        android:text="@string/regist_user"
         android:textAlignment="center"
         android:textSize="25sp"/>
 
     <EditText
-        android:id="@+id/registPwEdit"
+        android:id="@+id/ev_registPwd"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:ems="10"
@@ -169,7 +169,7 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:text="密码"
+        android:text="@string/regist_pwd"
         android:textAlignment="center"
         android:textSize="25sp"
         android:layout_width="0dp"
@@ -184,7 +184,7 @@
         app:layout_constraintVertical_bias="0.4"/>
 
     <TextView
-        android:id="@+id/registUserInfo"
+        android:id="@+id/tv_registUInfo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintWidth_percent="0.7"
@@ -198,7 +198,7 @@
         app:layout_constraintVertical_bias="0.35"/>
 
     <TextView
-        android:id="@+id/registPwInfo"
+        android:id="@+id/tv_registPInfo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintWidth_percent="0.7"
@@ -212,7 +212,7 @@
         app:layout_constraintVertical_bias="0.45"/>
 
     <TextView
-        android:id="@+id/registCpwInfo"
+        android:id="@+id/tv_registCPInfo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintWidth_percent="0.7"
@@ -226,7 +226,7 @@
         app:layout_constraintVertical_bias="0.55"/>
 
     <TextView
-        android:id="@+id/registSexInfo"
+        android:id="@+id/tv_registSInfo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintWidth_percent="0.7"
@@ -240,7 +240,7 @@
         app:layout_constraintVertical_bias="0.65" />
 
     <TextView
-        android:id="@+id/registTypeInfo"
+        android:id="@+id/tv_registTInfo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintWidth_percent="0.7"
@@ -266,20 +266,20 @@
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/registSexMaleButton"
+            android:id="@+id/rdoBtn_registMale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="20sp"
-            android:text="男" />
+            android:text="@string/regist_sex_male" />
 
         <RadioButton
-            android:id="@+id/registSexFemaleButton"
+            android:id="@+id/rdoBtn_registFemale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="20sp"
-            android:text="女" />
+            android:text="@string/regist_sex_female" />
 
     </RadioGroup>
 
@@ -297,20 +297,20 @@
         android:orientation="horizontal" >
 
         <RadioButton
-            android:id="@+id/registTypeComButton"
+            android:id="@+id/rdoBtn_registCommer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="20sp"
-            android:text="一般用户" />
+            android:text="@string/regist_type_common" />
 
         <RadioButton
-            android:id="@+id/registTypeSerButton"
+            android:id="@+id/rdoBtn_registService"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="20sp"
-            android:text="服务人员" />
+            android:text="@string/regist_type_service" />
     </RadioGroup>
 
 

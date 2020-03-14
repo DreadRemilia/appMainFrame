@@ -8,6 +8,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        //注册xUtils
         x.Ext.init(this);
         Density.setDensity(this);
     }

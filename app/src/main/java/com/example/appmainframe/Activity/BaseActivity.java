@@ -2,13 +2,13 @@ package com.example.appmainframe.Activity;
 /*
  *所有Activity基础类
  */
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.appmainframe.Utils.ActivityCollector;
 import com.example.appmainframe.Utils.Density;
 
 public class BaseActivity extends AppCompatActivity {
