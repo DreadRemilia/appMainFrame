@@ -7,6 +7,33 @@ public class User {
     private String userType;
     private String userCount;
     private String msg;
+    private String userMoney;
+    private String userHead;
+    private String userMarks;
+
+    public void setUserMarks(String userMarks) {
+        this.userMarks = userMarks;
+    }
+
+    public String getUserMarks() {
+        return userMarks;
+    }
+
+    public void setUserHead(String userHead) {
+        this.userHead = userHead;
+    }
+
+    public String getUserHead() {
+        return userHead;
+    }
+
+    public void setUserMoney(String userMoney) {
+        this.userMoney = userMoney;
+    }
+
+    public String getUserMoney() {
+        return userMoney;
+    }
 
     public void setUserCount(String userCount) {
         this.userCount = userCount;

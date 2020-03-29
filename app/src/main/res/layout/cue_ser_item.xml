@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="match_parent"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/serviceSex"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -22,7 +19,7 @@
             android:textSize="22sp" />
 
         <TextView
-            android:id="@+id/tv_serviceName"
+            android:id="@+id/tv_curSerName"
             android:layout_width="190dp"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -33,11 +30,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="match_parent"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView43"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -46,7 +42,7 @@
             android:textSize="22sp" />
 
         <TextView
-            android:id="@+id/tv_serviceProvider"
+            android:id="@+id/tv_curSerProvider"
             android:layout_width="124dp"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -54,7 +50,6 @@
             android:textSize="22sp" />
 
         <TextView
-            android:id="@+id/textView44"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -63,7 +58,7 @@
             android:textSize="22sp" />
 
         <TextView
-            android:id="@+id/tv_servicePrice"
+            android:id="@+id/tv_curSerPrice"
             android:layout_width="89dp"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -74,11 +69,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="match_parent"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView45"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -87,7 +81,7 @@
             android:textSize="22sp" />
 
         <TextView
-            android:id="@+id/tv_serviceType"
+            android:id="@+id/tv_curSerType"
             android:layout_width="119dp"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -95,7 +89,6 @@
             android:textSize="22sp" />
 
         <TextView
-            android:id="@+id/textView46"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -104,7 +97,7 @@
             android:textSize="22sp" />
 
         <TextView
-            android:id="@+id/tv_serviceCity"
+            android:id="@+id/tv_curSerCity"
             android:layout_width="141dp"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -114,11 +107,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="match_parent"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView39"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -127,7 +119,7 @@
             android:textSize="22sp" />
 
         <TextView
-            android:id="@+id/tv_serviceStart"
+            android:id="@+id/tv_curSerStart"
             android:layout_width="323dp"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
@@ -138,11 +130,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="match_parent"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView41"
             android:layout_width="65dp"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
@@ -151,7 +142,7 @@
             android:textSize="22sp" />
 
         <TextView
-            android:id="@+id/tv_serviceEnd"
+            android:id="@+id/tv_curSerEnd"
             android:layout_width="323dp"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
@@ -162,45 +153,69 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btn_serviceOrder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="22sp"
-            android:background="#FFBBFF"
-            android:layout_marginLeft="8dp"
-            android:text="@string/service_order" />
+        <TextView
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text="@string/service_state"
+            android:textAlignment="center"
+            android:textSize="22sp" />
 
         <TextView
-            android:id="@+id/textView23"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:id="@+id/tv_curSerState"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/btn_serviceShowProvider"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#FFBBFF"
-            android:textSize="22sp"
-            android:layout_marginRight="8dp"
-            android:text="@string/service_showprovider" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="25dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_curSerCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#FFBBFF"
+            android:text="@string/service_cancel"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_curSerAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#FFBBFF"
+            android:text="@string/service_address"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/devidedline" />
     </LinearLayout>
-
-
 </LinearLayout>

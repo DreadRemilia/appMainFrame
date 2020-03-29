@@ -18,6 +18,24 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintVertical_bias="0">
 
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/riv_optHead"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:border_color="#00000000"
+            app:border_width="1dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.28"
+            app:layout_constraintHorizontal_bias="0.046"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.19"
+            app:layout_constraintWidth_percent="0.45"
+            app:mutate_background="true"
+            app:oval="true" />
+
         <Button
             android:id="@+id/btn_optionChangeSetting"
             style="?android:attr/borderlessButtonStyle"
@@ -96,32 +114,32 @@
             android:id="@+id/textView19"
             android:layout_width="0dp"
             android:layout_height="35dp"
-            app:layout_constraintWidth_percent="0.32"
+            android:gravity="center_vertical"
             android:text="@string/option_type"
             android:textAlignment="center"
-            android:gravity="center_vertical"
-            app:layout_constraintLeft_toRightOf="@id/iv_user"
-            app:layout_constraintTop_toTopOf="@id/textView15"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintBottom_toBottomOf="@id/textView21"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintHorizontal_bias="0"
-            android:textSize="20sp" />
+            app:layout_constraintTop_toTopOf="@id/textView15"
+            app:layout_constraintWidth_percent="0.32" />
 
         <TextView
             android:id="@+id/textView15"
             android:layout_width="0dp"
             android:layout_height="35dp"
-            app:layout_constraintWidth_percent="0.32"
+            android:gravity="center_vertical"
             android:text="@string/option_sex"
             android:textAlignment="center"
             android:textSize="20sp"
-            app:layout_constraintLeft_toRightOf="@id/iv_user"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.14"
-            app:layout_constraintHorizontal_bias="0.0"
-            android:gravity="center_vertical"/>
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintWidth_percent="0.32" />
 
         <TextView
             android:id="@+id/tv_optionTotal"
@@ -142,18 +160,19 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintWidth_percent="1"
-            app:layout_constraintHeight_percent="0.11"
-            app:layout_constraintVertical_bias="0.58"
             android:background="#E4DBDB"
             android:paddingLeft="20dp"
             android:text="@string/option_curser"
             android:textAlignment="viewStart"
             android:textSize="25sp"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.11"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent" />
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.578"
+            app:layout_constraintWidth_percent="1" />
 
         <TextView
             android:id="@+id/tv_optionUser"
@@ -181,18 +200,6 @@
             app:layout_constraintBottom_toBottomOf="@id/tv_optionTotal"
             android:textSize="20sp" />
 
-        <ImageView
-            android:id="@+id/iv_user"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/imageRef"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintHorizontal_bias="0.1"
-            app:layout_constraintVertical_bias="0.2"/>
-
         <Button
             android:id="@+id/btn_optionHisSer"
             style="?android:attr/borderlessButtonStyle"
@@ -215,17 +222,17 @@
             android:id="@+id/textView21"
             android:layout_width="0dp"
             android:layout_height="35dp"
-            app:layout_constraintWidth_percent="0.32"
+            android:gravity="center_vertical"
             android:text="@string/option_total"
             android:textAlignment="center"
-            android:gravity="center_vertical"
-            app:layout_constraintLeft_toRightOf="@id/iv_user"
-            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="0.7"
             app:layout_constraintVertical_bias="0.39"
-            app:layout_constraintHorizontal_bias="0"
-            android:textSize="20sp" />
+            app:layout_constraintWidth_percent="0.32" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

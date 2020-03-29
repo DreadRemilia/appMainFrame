@@ -87,7 +87,7 @@ public class LoginFragment extends Fragment {
                 JSONObject json = new JSONObject();
                 User user = new User();
                 //与后台对应url@RequestMapping(value = "/login")
-                String urlpath = "http://192.168.0.101:8080/user/login";
+                String urlpath = "http://192.168.0.102:8080/user/login";
                 URL url;
                 Gson gson = new Gson();
                 user.setUserName(ev_loginUser.getText().

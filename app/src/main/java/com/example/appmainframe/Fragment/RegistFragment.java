@@ -116,7 +116,7 @@ public class RegistFragment extends Fragment {
                     JSONObject json = new JSONObject();
                     User user = new User();
                     //确定后端的url@RequestMapping(value = "/regist")
-                    String urlpath = "http://192.168.0.101:8080/user/regist";
+                    String urlpath = "http://192.168.0.102:8080/user/regist";
                     URL url;
                     //为实体类的对象赋值
                     user.setUserName(ev_registUser.getText().toString());

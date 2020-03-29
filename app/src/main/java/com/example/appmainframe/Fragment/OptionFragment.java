@@ -2,6 +2,7 @@ package com.example.appmainframe.Fragment;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.icu.text.IDNA;
 import android.net.Uri;
 import android.os.Bundle;
@@ -26,10 +27,12 @@ import com.example.appmainframe.Activity.OptionActivity_;
 import com.example.appmainframe.Bean.EventMessage;
 import com.example.appmainframe.Bean.User;
 import com.example.appmainframe.R;
+import com.example.appmainframe.Utils.Base64ToBitmap;
 import com.example.appmainframe.Utils.HttpUtils;
 import com.example.appmainframe.Utils.NetUtils;
 import com.google.android.material.badge.BadgeUtils;
 import com.google.gson.Gson;
+import com.makeramen.roundedimageview.RoundedImageView;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
@@ -47,6 +50,7 @@ import java.net.URL;
 public class OptionFragment extends Fragment {
 
     String userNameParam;
+    String userTypeParam;
     @ViewById(R.id.tv_optionUser)
     TextView tv_optionUser;
     @ViewById(R.id.tv_optionSex)
@@ -63,6 +67,8 @@ public class OptionFragment extends Fragment {
     Button btn_optionHisSer;
     @ViewById(R.id.btn_optionChangeSetting)
     Button btn_optionChangeSetting;
+    @ViewById(R.id.riv_optHead)
+    RoundedImageView riv_optHead;
 
     //接收msg显示事件
     Handler handler = new Handler(){
@@ -71,9 +77,14 @@ public class OptionFragment extends Fragment {
             if(msg.what == 1){
                 Gson gson = new Gson();
                 User user1 = gson.fromJson(msg.obj.toString(),User.class);
+                userTypeParam = user1.getUserType();
                 tv_optionSex.setText(user1.getUserSex());
                 tv_optionType.setText(user1.getUserType());
                 tv_optionTotal.setText(user1.getUserCount());
+                if(user1.getUserHead() != null){
+                    Bitmap newMap = Base64ToBitmap.base64ToBitmap(user1.getUserHead());
+                    riv_optHead.setImageBitmap(newMap);
+                }
             }
         }
     };
@@ -90,8 +101,8 @@ public class OptionFragment extends Fragment {
         //当前服务事件
         Intent intent = new Intent(getActivity(), OptionActivity_.class);
         intent.putExtra("optmsg","cur");
+        intent.putExtra("userType",userTypeParam);
         startActivity(intent);
-        getActivity().finish();
     }
 
     @Click(R.id.btn_optionHisSer)
@@ -109,6 +120,7 @@ public class OptionFragment extends Fragment {
         //intent.putExtra("userNameParam",userNameParam);
         intent.putExtra("optmsg","chg");
         startActivity(intent);
+        getActivity().finish();
     }
 
     //接收基本信息
@@ -121,7 +133,7 @@ public class OptionFragment extends Fragment {
                 JSONObject json = new JSONObject();
                 User user = new User();
                 //确定后端的url@RequestMapping(value = "/showoption")
-                String urlpath = "http://192.168.0.101:8080/main/showoption";
+                String urlpath = "http://192.168.0.102:8080/main/showoption";
                 URL url;
                 user.setUserName(userNameParam);
 

@@ -35,7 +35,7 @@
     <string name="option_type">用户类别：</string>
     <string name="option_total">服务总数：</string>
     <string name="option_curser">当前服务</string>
-    <string name="option_hisser">历史服务</string>
+    <string name="option_hisser">全部服务</string>
     <string name="option_changesett">更改设置</string>
     <string name="option_exit">退出系统</string>
     <!--OptionChangeFragment-->
@@ -48,8 +48,72 @@
     <string name="change_newcpwd">确认密码：</string>
     <string name="change_newsex">新性别：</string>
     <string name="change_newtype">新类型：</string>
+    <string name="change_male">男</string>
+    <string name="change_female">女</string>
+    <string name="change_commit">提交</string>
+    <string name="change_back">返回</string>
+    <string name="change_head">头像：</string>
+    <string name="change_albim">相册</string>
+    <string name="change_camera">相机</string>
     <!--ProviderFragment-->
     <string name="provider_title">服务发布</string>
     <string name="provider_servicename">服务名称：</string>
     <string name="provider_city">修改城市：</string>
+    <string name="provider_showcity">点击按钮选择城市</string>
+    <string name="provider_selectcity">选择城市</string>
+    <string name="provider_start">开始时间：</string>
+    <string name="provider_selectstart">点击选择开始时间</string>
+    <string name="provider_selectend">点击选择结束时间</string>
+    <string name="provider_end">结束时间：</string>
+    <string name="provider_publish">发布</string>
+    <string name="provider_cancel">清空</string>
+    <string name="provider_service">家政服务</string>
+    <string name="provider_type">服务类型：</string>
+    <string name="provider_other">其他服务</string>
+    <string name="provider_price">服务价格：</string>
+    <!--ServiceFragment-->
+    <string name="service_name">服务名:</string>
+    <string name="service_provider">服务人员：</string>
+    <string name="service_Price">价格：</string>
+    <string name="service_type">类型：</string>
+    <string name="service_city">城市：</string>
+    <string name="service_time">时间：</string>
+    <string name="service_to">至</string>
+    <string name="service_order">预定</string>
+    <string name="service_showprovider">人员查看</string>
+    <string name="service_state">订单状态：</string>
+    <string name="service_cancel">取消订单</string>
+    <string name="service_confirm">确认完成</string>
+    <string name="service_address">联系方式</string>
+    <!--Dialog_showProvider-->
+    <string name="show_providername">用户名：</string>
+    <string name="show_marks">评价：</string>
+    <string name="show_sex">性别：</string>
+    <string name="show_total">服务总数：</string>
+    <!--HistoryServiceFragment-->
+    <string name="his_back">返回</string>
+    <!--MoneyFragment-->
+    <string name="money_helo">您好：</string>
+    <string name="money_rest">您的余额为：</string>
+    <string name="money_intitle">请选择您需要充值的金额</string>
+    <string name="money_10">10</string>
+    <string name="money_50">50</string>
+    <string name="money_100">100</string>
+    <string name="money_outtitle">请选择您需要提现的金额</string>
+    <string name="money_in">充值</string>
+    <string name="money_out">提现</string>
+    <!--Dialog_Order-->
+    <string name="order_method">方式：</string>
+    <string name="order_number">号码：</string>
+    <string name="order_phone">固话</string>
+    <string name="order_mobile">手机</string>
+    <!--Dialog_Address-->
+    <string name="address_user">用户：</string>
+    <!--Dialog_Marks-->
+    <string name="marks_title">请为本次服务做出评价</string>
+    <string name="marks_1">1</string>
+    <string name="marks_2">2</string>
+    <string name="marks_3">3</string>
+    <string name="marks_4">4</string>
+    <string name="marks_5">5</string>
 </resources>

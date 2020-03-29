@@ -6,27 +6,76 @@ public class ServiceOrder {
     private String serviceNo;
     private String serviceName;
     private String serviceType;
-    private Date serviceStart;
-    private Date serviceEnd;
+    private String serviceStart;
+    private String serviceEnd;
     private String serviceProvider;
     private String serviceCustomer;
     private String serviceCity;
+    private String serviceState;
+    private String servicePrice;
+    private String serviceAddress;
+    private String serviceMarks;
+    private String msg;
 
-    public void setServiceStart(Date serviceStart) {
+    public void setServiceMarks(String serviceMarks) {
+        this.serviceMarks = serviceMarks;
+    }
+
+    public String getServiceMarks() {
+        return serviceMarks;
+    }
+
+    public void setServiceAddress(String serviceAddress) {
+        this.serviceAddress = serviceAddress;
+    }
+
+    public String getServiceAddress() {
+        return serviceAddress;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setServicePrice(String servicePrice) {
+        this.servicePrice = servicePrice;
+    }
+
+    public String getServicePrice() {
+        return servicePrice;
+    }
+
+    public void setServiceState(String serviceState) {
+        this.serviceState = serviceState;
+    }
+
+    public String getServiceState() {
+        return serviceState;
+    }
+
+    public void setServiceStart(String serviceStart) {
         this.serviceStart = serviceStart;
     }
 
-    public void setServiceEnd(Date serviceEnd) {
+    public void setServiceEnd(String serviceEnd) {
         this.serviceEnd = serviceEnd;
     }
 
-    public Date getServiceStart() {
+    public String getServiceStart() {
         return serviceStart;
     }
 
-    public Date getServiceEnd() {
+    public String getServiceEnd() {
         return serviceEnd;
     }
+
+
+
     public void setServiceCity(String serviceCity) {
         this.serviceCity = serviceCity;
     }

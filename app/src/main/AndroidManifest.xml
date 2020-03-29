@@ -15,6 +15,8 @@
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:name=".Utils.App"
@@ -25,7 +27,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Activity.OptionActivity_" android:theme="@style/DefaultCityPickerTheme"></activity>
+        <provider
+            android:authorities="com.example.appmainframe.fileProvider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <activity android:name=".Activity.OptionActivity_" ></activity>
 
         <meta-data
             android:name="com.amap.api.v2.apikey"
@@ -37,7 +48,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.FrameActivity_" />
+        <activity android:name=".Activity.FrameActivity_" android:theme="@style/DefaultCityPickerTheme" />
     </application>
 
 </manifest>

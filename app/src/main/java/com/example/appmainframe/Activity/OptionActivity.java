@@ -38,8 +38,9 @@ import java.net.URL;
      protected void initView(){
          Intent intent = getIntent();
          String getOptMsg = intent.getStringExtra("optmsg");
+         String getTypeMsg = intent.getStringExtra("userType");
          if (getOptMsg.equals("his")) {
-             tv_optInfo.setText("历史服务");
+             tv_optInfo.setText("全部服务");
              getSupportFragmentManager()
                      .beginTransaction()
                      .replace(R.id.frg_opt,new HisSerFragment_())

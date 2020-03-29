@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintWidth_percent="0.8"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintVertical_bias="0.2"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:text="@string/marks_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintWidth_percent="0.9"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintVertical_bias="0.7"
+            android:textSize="22sp"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:text="@string/marks_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <RadioButton
+                android:id="@+id/rdoBtn_mark1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:text="@string/marks_1" />
+
+            <RadioButton
+                android:id="@+id/rdoBtn_mark2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:text="@string/marks_2" />
+
+            <RadioButton
+                android:id="@+id/rdoBtn_mark3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:text="@string/marks_3" />
+
+            <RadioButton
+                android:id="@+id/rdoBtn_mark4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:text="@string/marks_4" />
+
+            <RadioButton
+                android:id="@+id/rdoBtn_mark5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:text="@string/marks_5" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
